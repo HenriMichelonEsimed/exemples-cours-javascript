@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sélecteurs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <ul>
+            <li>Ligne 1</li>
+            <li class="classe1 classe2">Ligne 2</li>
+            <li></li>
+            <li id="laligne"></li>
+            <li class="classe1"><span>Ligne 5</span></li>
+            <li><span>Ligne 6</span></li>
+        </ul>
+    </div>
+    <div class="row">
+        <form>
+            <button class="form-control" onclick="addli()" type='button'>Ajouter une ligne</button>
+            <br/>
+            <input class="form-control" placeholder="Numéro de ligne à supprimer" type="text" id="numero"/>
+            <button class="form-control" onclick="removeli()" type='button'>Supprimer une ligne</button>
+            <br/>
+        </form>
+    </div>
+    <div class="row">
+        <div id="erreur-saisie" class="alert alert-danger"
+             role="alert" style="display: none;">
+            Veuillez saisir un numéro de ligne à supprimer
+        </div>
+    </div>
+    <div class="row">
+        <div id="erreur-numero" class="alert alert-danger"
+             role="alert" style="display: none;">
+            Le numéro de correspond pas à une ligne
+        </div>
+    </div>
+</div>
+
+<script type="application/ecmascript" src="tools.js"></script>
+<script type="module" src="index.js"></script>
+</body>
+</html>
