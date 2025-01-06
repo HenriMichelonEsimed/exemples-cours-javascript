@@ -1,5 +1,5 @@
 const myHeaders = new Headers({
-    "x-api-key": "d016f309-0eca-4c47-a749-cc247aa403d7",
+    "x-api-key": "VOTRE CLE ICI",
 })
 
 try {
