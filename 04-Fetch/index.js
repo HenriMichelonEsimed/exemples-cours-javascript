@@ -1,5 +1,5 @@
 const myHeaders = new Headers({
-    "x-api-key": "VOTRE CLE ICI",
+    "x-api-key": "d016f309-0eca-4c47-a749-cc247aa403d7",
 })
 
 fetch("https://api.thecatapi.com/v1/breeds", {headers: myHeaders})
